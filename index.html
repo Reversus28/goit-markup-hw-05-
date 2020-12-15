@@ -394,7 +394,7 @@
           </address>
         </div>
         <div class="footer-social">
-          <b class="join">присоединяйтесь</b>
+          <b class="call-title">присоединяйтесь</b>
           <ul class="social-list list">
             <li class="social-item">
               <a href="" class="social-link">
@@ -426,14 +426,33 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <b class="call-title">Подпишитесь на рассылку</b>
+          <form action="" class="footer-form">
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              class="sub-form"
+            />
+            <button type="submit" class="submit">
+              Подписаться
+              <svg width="24" height="24" class="icon-sub">
+                <use href="./images/icons.svg#icon-suub"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <svg class="button-icon" data-modal-close>
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
+        <button type="button" class="button-icon" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>

@@ -491,8 +491,13 @@ img {
   margin-top: 9px;
 }
 
-.footer-social .join {
-  display: inline-block;
+.footer-social {
+  margin-right: 93px;
+}
+
+.footer-social .call-title,
+.footer-subscribe .call-title {
+  display: block;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -522,6 +527,55 @@ img {
   background-color: var(--accent-color);
 }
 
+.footer-subscribe {
+  color: #ffffff;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-form .sub-form {
+  width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.footer-form .submit {
+  display: flex;
+  align-items: center;
+  padding: 10px 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.footer-form .icon-sub {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+/* .footer-form [placeholder='E-mail'] {
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: rgba(255, 255, 255, 0.6);
+} */
 /*=========== END FOOTER ===========*/
 
 /*=========== PORTFOLIO HTML ===========*/
@@ -687,7 +741,7 @@ img {
   left: 50%;
 
   min-width: 528px;
-  min-height: 581px;
+  min-height: 181px;
   background-color: #ffffff;
 
   transform: translate(-50%, -50%) scale(1);
@@ -703,10 +757,18 @@ img {
   top: 8px;
   right: 8px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
   width: 30px;
   height: 30px;
 
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   cursor: pointer;
 }
-
 /*=========== END MODAL ===========*/ ;
