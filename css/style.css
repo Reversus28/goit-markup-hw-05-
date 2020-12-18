@@ -790,10 +790,17 @@ img {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 42px;
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-options .input:focus {
   outline-color: var(--accent-color);
+}
+
+.modal-options .icon,
+.modal .button-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-options .input:focus + .icon {
@@ -828,6 +835,7 @@ img {
   margin-bottom: 20px;
   padding: 12px 16px;
   resize: none;
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form .comment:focus {
@@ -859,16 +867,20 @@ img {
 }
 
 .agreement .checkbox {
-  display: inline-block;
+  display: block;
   width: 16px;
   height: 15px;
   margin-right: 8px;
 
-  background-image: url(../images/disabled-ckeck.svg);
+  background-color: #fff;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
 }
 
 .check:checked + .checkbox {
   background-image: url(../images/enabled-check.svg);
+  background-origin: border-box;
+  border: none;
 }
 
 .agreement .contract {
